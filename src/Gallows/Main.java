@@ -1,3 +1,5 @@
+package Gallows;
+
 import java.util.*;
 
 class Word{
