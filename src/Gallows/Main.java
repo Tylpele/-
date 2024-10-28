@@ -9,6 +9,8 @@ class Word{
         this.value=value.toUpperCase();
         this.mask = createMask();
     }
+
+    //создание маски по длине слова
     private StringBuilder createMask(){
         StringBuilder mask = new StringBuilder();
         for(int i = 0; i< value.length(); i++) {
@@ -22,6 +24,8 @@ class Word{
     public  StringBuilder getMask(){
         return mask;
     }
+
+    //изменение маски в зависимости от введенного символа
     public void updateMask(char letter){
         for(int i = 0; i<value.length(); i++){
             if(value.charAt(i)==letter){
